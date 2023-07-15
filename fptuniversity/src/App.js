@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Main } from "./containers";
-import { NewsDetail } from "./component";
+import { Contact, NewsDetail } from "./component";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/*" element={<Main />} />
         <Route path="/news/:id" element={<NewsDetail />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );
